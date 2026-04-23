@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Veri Kartları</title>
+  <style>
+    .kartlar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 900px;
+    }
+
+    .kart {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      min-width: 220px;
+    }
+
+    .kart p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .kart p b {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="form">
+    <input type="text" id="ad" placeholder="Ad" />
+    <input type="text" id="soyad" placeholder="Soyad" />
+    <input type="email" id="eposta" placeholder="E-posta" />
+    <input type="tel" id="telefon" placeholder="Telefon" />
+    <input type="text" id="sehir" placeholder="Şehir" />
+    <input type="text" id="meslek" placeholder="Meslek" />
+    <input type="number" id="yas" placeholder="Yaş" />
+    <input type="text" id="okul" placeholder="Okul" />
+    <input type="text" id="hobiler" placeholder="Hobiler" />
+    <input type="text" id="notlar" placeholder="Notlar" />
+    <input type="color" id="renk" value="#4a90d9" />
+    <button id="btn">Kartı Oluştur</button>
+  </div>
+
+  <div id="cikti" class="kartlar"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
